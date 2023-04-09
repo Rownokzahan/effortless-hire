@@ -33,6 +33,20 @@ const Home = () => {
 
             </section>
 
+            {/* Job Category */}
+            <section className='mx-2 md:mx-10 lg:mx-20 my-32'>
+
+                <h2 className='text-3xl font-bold text-center mb-4'>Job Category List</h2>
+                <p className='text-ui-light-gray text-center mb-8'>
+                    Explore thousands of job opportunities with all the information you need. Its your future
+                </p>
+
+                <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
+                    {jobCategories.map(category => <JobCategory key={category.id} category={category} />)}
+                </div>
+
+            </section>
+
         </>
 
     );
