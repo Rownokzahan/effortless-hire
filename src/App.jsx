@@ -7,9 +7,7 @@ const App = () => {
   return (
     <div className='mx-auto max-w-[1440px]'>
       <Header />
-      <div className='mx-2 md:mx-10 my-10'>
         <Outlet></Outlet>
-      </div>
     </div>
   );
 };

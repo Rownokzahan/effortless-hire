@@ -8,7 +8,7 @@ const Header = () => {
     const [openNavLink, setOpenNavLink] = useState(false);
 
     return (
-        <nav className='px-2 md:px-10 py-8 flex flex-col md:flex-row justify-between md:items-center bg-ui-light relative text-gray-800'>
+        <nav className='px-2 md:px-10 lg:px-20 py-8 flex flex-col md:flex-row justify-between md:items-center bg-ui-light relative text-gray-800'>
             <Link className='font-bold text-2xl text-ui-dark' to='/'>
                 EffortlessHire
             </Link>
