@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Home from './Home'
+import Home from './components/Home'
 
 const router = createBrowserRouter([
   {
@@ -13,7 +13,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element:<Home />
+        element: <Home />,
+        loader: () => fetch('jobsCategory.json'),
       }
     ]
   }

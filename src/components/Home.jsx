@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
+import JobCategory from './JobCategory';
+import { useLoaderData } from 'react-router-dom';
 
 const Home = () => {
+
+    const jobCategories = useLoaderData()
+    console.log(jobCategories);
+
     return (
         <>
             {/* Banner section */}
-            <section className='flex flex-col md:flex-row gap-8 items-center bg-ui-light px-2 md:px-10 lg:px-20 pb-10'>
+            <section className='flex flex-col md:flex-row gap-8 items-center bg-ui-light px-2 md:px-10 lg:px-20 text-ui-dark'>
 
                 <div className='w-full'>
-                    <div className=' flex flex-col gap-4 md:gap-8 md:max-w-md'>
+                    <div className='space-y-4 lg:space-y-8 md:max-w-md'>
                         <h1 className='text-5xl lg:text-7xl font-semibold leading-[1.2em]'>
                             One Step <br />
                             Closer To Your <br />
@@ -22,10 +28,11 @@ const Home = () => {
                 </div>
 
                 <div className='w-full'>
-                    <img className='w-62 mx-auto md:w-full' src="banner-person.png" alt="" />
+                    <img className='lg:w-62 mx-auto md:w-full' src="banner-person.png" alt="" />
                 </div>
 
             </section>
+
         </>
 
     );

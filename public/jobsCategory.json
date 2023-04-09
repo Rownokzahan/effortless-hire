@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "logo": "💼",
+        "name": "Administration",
+        "jobs_available": 400
+    },
+    {
+        "id": 2,
+        "logo": "🏭",
+        "name": "Manufacturing",
+        "jobs_available": 300
+    },
+    {
+        "id": 3,
+        "logo": "🏥",
+        "name": "Healthcare",
+        "jobs_available": 500
+    },
+    {
+        "id": 4,
+        "logo": "💻",
+        "name": "Information Technology",
+        "jobs_available": 200
+    }
+]
