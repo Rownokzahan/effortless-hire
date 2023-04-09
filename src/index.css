@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .text-gradient {
+        background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+}
+
+
+.btn-primary{
+    @apply p-4 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg text-white font-semibold
+}
+
+.menu {
+    @apply text-ui-light-gray absolute top-32 bg-white w-9/12 flex-col gap-4 mt-4 p-4 md:static md:bg-transparent md:w-auto md:flex md:flex-row md:items-center md:gap-8 md:mt-0 md:p-0
+}
