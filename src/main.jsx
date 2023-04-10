@@ -10,12 +10,13 @@ import { JobDetailsLoader } from './Loaders/JobDetailsLoader'
 import AppliedJobs from './components/AppliedJobs'
 import { AppliedJobsLoader } from './Loaders/AppliedJobsLoader'
 import { Toaster } from 'react-hot-toast'
+import ErrorPage from './components/ErrorPage'
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    // errorElement: <div>Page Not found</div>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
