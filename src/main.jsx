@@ -11,6 +11,7 @@ import AppliedJobs from './components/AppliedJobs'
 import { AppliedJobsLoader } from './Loaders/AppliedJobsLoader'
 import { Toaster } from 'react-hot-toast'
 import ErrorPage from './components/ErrorPage'
+import Blog from './components/Blog'
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,11 @@ const router = createBrowserRouter([
         path: '/applied-jobs',
         element: <AppliedJobs />,
         loader: AppliedJobsLoader,
+      },
+
+      {
+        path: '/blog',
+        element: <Blog />,
       },
     ]
   }
