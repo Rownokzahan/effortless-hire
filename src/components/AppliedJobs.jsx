@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import AppliedJobCard from './AppliedJobCard';
+import AppliedJobCard from './cards/AppliedJobCard';
 import Banner from './Banner';
 
 const AppliedJobs = () => {

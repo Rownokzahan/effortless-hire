@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import JobCategory from './JobCategory';
+import JobCategoryCard from './cards/JobCategoryCard';
 import { useLoaderData } from 'react-router-dom';
-import Job from './Job';
+import FeaturedJobCard from './cards/FeaturedJobCard';
 
 const Home = () => {
 
@@ -44,7 +44,7 @@ const Home = () => {
                 </p>
 
                 <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
-                    {categories.map(category => <JobCategory key={category.id} category={category} />)}
+                    {categories.map(category => <JobCategoryCard key={category.id} category={category} />)}
                 </div>
 
             </section>
@@ -59,8 +59,8 @@ const Home = () => {
 
                 <div className='grid md:grid-cols-2 gap-6'>
                     {displayAllJob ?
-                        jobs.map(job => <Job key={job.id} job={job} />)
-                        : jobs.slice(0, 4).map(job => <Job key={job.id} job={job} />)
+                        jobs.map(job => <FeaturedJobCard key={job.id} job={job} />)
+                        : jobs.slice(0, 4).map(job => <FeaturedJobCard key={job.id} job={job} />)
                     }
                 </div>
 

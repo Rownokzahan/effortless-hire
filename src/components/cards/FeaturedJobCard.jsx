@@ -2,7 +2,7 @@ import React from 'react';
 import { HiOutlineLocationMarker, HiOutlineCurrencyDollar } from "react-icons/hi";
 import { Link } from 'react-router-dom';
 
-const Job = ({job}) => {
+const FeaturedJobCard = ({job}) => {
 
     const { id, company_logo, job_title, company_name, remote_or_onsite, fulltime_or_parttime, location, salary } = job
 
@@ -28,4 +28,4 @@ const Job = ({job}) => {
     );
 };
 
-export default Job;
+export default FeaturedJobCard;
