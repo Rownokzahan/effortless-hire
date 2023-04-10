@@ -4,6 +4,7 @@ import App from './App'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './components/Home'
+import { JobCategoryAndJobsLoader } from './Loaders/JobCategoryAndJobsLoader'
 
 const router = createBrowserRouter([
   {
@@ -14,7 +15,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
-        loader: () => fetch('jobsCategory.json'),
+        loader: JobCategoryAndJobsLoader,
       }
     ]
   }

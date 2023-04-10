@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import JobCategory from './JobCategory';
 import { useLoaderData } from 'react-router-dom';
+import Job from './Job';
 
 const Home = () => {
 
-    const jobCategories = useLoaderData()
-    console.log(jobCategories);
+    const { categories, jobs } = useLoaderData()
+    const [displayAllJob, setDisplayAllJob] = useState(false)
+
 
     return (
         <>
@@ -28,12 +30,12 @@ const Home = () => {
                 </div>
 
                 <div className='w-full'>
-                    <img className='lg:w-62 mx-auto md:w-full' src="banner-person.png" alt="" />
+                    <img className='lg:w-62 mx-auto md:w-full' src="images/banner-person.png" alt="" />
                 </div>
 
             </section>
 
-            {/* Job Category */}
+            {/* Job Category Section */}
             <section className='mx-2 md:mx-10 lg:mx-20 my-32'>
 
                 <h2 className='text-3xl font-bold text-center mb-4'>Job Category List</h2>
@@ -42,9 +44,29 @@ const Home = () => {
                 </p>
 
                 <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-6'>
-                    {jobCategories.map(category => <JobCategory key={category.id} category={category} />)}
+                    {categories.map(category => <JobCategory key={category.id} category={category} />)}
                 </div>
 
+            </section>
+
+            {/* Featured Job Section */}
+            <section className='mx-2 md:mx-10 lg:mx-20 my-32'>
+
+                <h2 className='text-3xl font-bold text-center mb-4'>Featured Jobs</h2>
+                <p className='text-ui-light-gray text-center mb-8'>
+                    Explore thousands of job opportunities with all the information you need. Its your future
+                </p>
+
+                <div className='grid md:grid-cols-2 gap-6'>
+                    {displayAllJob ?
+                        jobs.map(job => <Job key={job.id} job={job} />)
+                        : jobs.slice(0, 4).map(job => <Job key={job.id} job={job} />)
+                    }
+                </div>
+
+                <div className='text-center mt-8'>
+                    <button className='btn-primary'>See All Jobs</button>
+                </div>
             </section>
 
         </>

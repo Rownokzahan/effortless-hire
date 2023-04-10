@@ -1,0 +1,115 @@
+[
+    {
+        "id": 1,
+        "company_logo": "images/google.png",
+        "job_title": "Software Engineer",
+        "company_name": "Google",
+        "remote_or_onsite": "Remote",
+        "location": "California, USA",
+        "fulltime_or_parttime": "Full time",
+        "salary": "150k - 200k",
+        "job_description": "We're looking for a talented software engineer to join our team and help develop cutting-edge software for our clients.",
+        "job_responsibility": "Responsibilities include designing, developing, and testing software, collaborating with cross-functional teams, and ensuring software quality.",
+        "educational_requirements": "Bachelor's or Master's degree in Computer Science or related field",
+        "experiences": "3+ years of experience in software development",
+        "contact_information": {
+            "phone": "555-1234",
+            "email": "jobs@google.com"
+        }
+    },
+
+    {
+        "id": 2,
+        "company_logo": "images/facebook.png",
+        "job_title": "Data Scientist",
+        "company_name": "Facebook",
+        "remote_or_onsite": "Onsite",
+        "location": "New York, USA",
+        "fulltime_or_parttime": "Full time",
+        "salary": "120k - 150k",
+        "job_description": "We're seeking an experienced data scientist to join our team and help analyze user data to improve our platform.",
+        "job_responsibility": "Responsibilities include conducting statistical analysis, building predictive models, and collaborating with cross-functional teams to develop data-driven insights.",
+        "educational_requirements": "Master's or PhD in Computer Science, Statistics, or related field",
+        "experiences": "5+ years of experience in data science or related field",
+        "contact_information": {
+            "phone": "555-5678",
+            "email": "jobs@facebook.com"
+        }
+    },
+
+    {
+        "id": 3,
+        "company_logo": "images/tesla.png",
+        "job_title": "Mechanical Engineer",
+        "company_name": "Tesla",
+        "remote_or_onsite": "Onsite",
+        "location": "California, USA",
+        "fulltime_or_parttime": "Full time",
+        "salary": "120k - 160k",
+        "job_description": "We're seeking a mechanical engineer to join our team and help design and develop the next generation of electric vehicles.",
+        "job_responsibility": "Responsibilities include designing and testing mechanical systems, collaborating with cross-functional teams, and ensuring product quality.",
+        "educational_requirements": "Bachelor's or Master's degree in Mechanical Engineering or related field",
+        "experiences": "3+ years of experience in mechanical engineering or related field",
+        "contact_information": {
+            "phone": "555-9012",
+            "email": "jobs@tesla.com"
+        }
+    },
+
+    {
+        "id": 4,
+        "company_logo": "images/amazon.png",
+        "job_title": "Senior Software Developer",
+        "company_name": "Amazon",
+        "remote_or_onsite": "Remote",
+        "location": "Seattle, WA",
+        "fulltime_or_parttime": "Full time",
+        "salary": "150k - 200k",
+        "job_description": "We are seeking a highly motivated and experienced Senior Software Developer to join our team. You will work on developing scalable and reliable software systems to support our rapidly growing business.",
+        "job_responsibility": "- Design, develop and test high-performance, distributed and scalable software applications\n- Collaborate with cross-functional teams to deliver features on time and to specification\n- Troubleshoot and debug issues in production and non-production environments",
+        "educational_requirements": "Bachelor's degree in Computer Science or related field",
+        "experiences": "8+ years of experience in software development",
+        "contact_information": {
+            "phone": "555-1234",
+            "email": "careers@amazon.com"
+        }
+    },
+
+    {
+        "id": 5,
+        "company_logo": "images/microsoft.png",
+        "job_title": "Product Manager",
+        "company_name": "Microsoft",
+        "remote_or_onsite": "Onsite",
+        "location": "Redmond, WA",
+        "fulltime_or_parttime": "Full time",
+        "salary": "130k - 170k",
+        "job_description": "We are looking for an experienced Product Manager to help drive the development and launch of innovative products that meet customer needs.",
+        "job_responsibility": "Responsibilities include defining product features and requirements, collaborating with engineering teams, and driving product launches.",
+        "educational_requirements": "Bachelor's or Master's degree in Business, Engineering, or related field",
+        "experiences": "5+ years of experience in product management or related field",
+        "contact_information": {
+            "phone": "555-6789",
+            "email": "careers@microsoft.com"
+        }
+    },
+
+    {
+        "id": 6,
+        "company_logo": "images/uber.png",
+        "job_title": "Operations Manager",
+        "company_name": "Uber",
+        "remote_or_onsite": "Onsite",
+        "location": "San Francisco, CA",
+        "fulltime_or_parttime": "Part time",
+        "salary": "110k - 140k",
+        "job_description": "We're looking for a skilled operations manager to help us manage and grow our transportation platform.",
+        "job_responsibility": "Responsibilities include managing driver and rider experiences, developing and implementing operational processes, and collaborating with cross-functional teams to drive business growth.",
+        "educational_requirements": "Bachelor's or Master's degree in Business, Operations Management, or related field",
+        "experiences": "3+ years of experience in operations management or related field",
+        "contact_information": {
+            "phone": "555-3456",
+            "email": "jobs@uber.com"
+        }
+    }
+]
