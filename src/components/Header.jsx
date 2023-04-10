@@ -19,7 +19,7 @@ const Header = () => {
                 <RxCross1 onClick={() => setOpenNavLink(false)} className="w-6 h-6 absolute right-2 top-2 md:hidden" />
                 <ActiveLink to={'/'}>Home</ActiveLink>
                 <ActiveLink to={'/statistics'}>Statistics</ActiveLink>
-                <ActiveLink to={'/jobs'}>Applied Jobs</ActiveLink>
+                <ActiveLink to={'/applied-jobs'}>Applied Jobs</ActiveLink>
                 <ActiveLink to={'/blog'}>Blog</ActiveLink>
             </div>
 

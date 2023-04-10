@@ -7,6 +7,9 @@ import Home from './components/Home'
 import { JobCategoryAndJobsLoader } from './Loaders/JobCategoryAndJobsLoader'
 import JobDetails from './components/JobDetails'
 import { JobDetailsLoader } from './Loaders/JobDetailsLoader'
+import AppliedJobs from './components/AppliedJobs'
+import { AppliedJobsLoader } from './Loaders/AppliedJobsLoader'
+import { Toaster } from 'react-hot-toast'
 
 const router = createBrowserRouter([
   {
@@ -21,9 +24,15 @@ const router = createBrowserRouter([
       },
 
       {
-        path: '/job-details/:id',
+        path: '/job/:id',
         element: <JobDetails />,
         loader: ({ params }) => JobDetailsLoader(params.id)
+      },
+
+      {
+        path: '/applied-jobs',
+        element: <AppliedJobs />,
+        loader: AppliedJobsLoader,
       },
     ]
   }
@@ -31,6 +40,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Toaster />
     <RouterProvider router={router} />
   </React.StrictMode>,
 )

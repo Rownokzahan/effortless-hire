@@ -5,11 +5,36 @@ import { GiTie } from 'react-icons/gi'
 import { FiPhone } from "react-icons/fi"
 import { MdOutlineEmail } from "react-icons/md"
 import { RiMapPinLine } from "react-icons/ri"
+import { toast } from 'react-hot-toast'
 
 const JobDetails = () => {
 
     const jobDetail = useLoaderData()
     const { id, job_description, job_responsibility, educational_requirements, experiences, salary, job_title, contact_information, location } = jobDetail
+
+    const handleApplyNow = id => {
+
+        let appliedJobs = []
+        const savedJobs = JSON.parse(localStorage.getItem('applied-jobs'))
+
+        if (savedJobs) {           
+            if (savedJobs.includes(id)) {
+                toast.error('You have already applied for this job!')
+                return;
+            }
+
+            else {
+                appliedJobs = [...savedJobs, id]
+                toast.success('Job application successful!')
+            }
+        }
+
+        else {
+            appliedJobs.push(id)
+        }
+
+        localStorage.setItem('applied-jobs', JSON.stringify(appliedJobs))
+    }
 
     return (
         <>
@@ -85,7 +110,7 @@ const JobDetails = () => {
                         </p>
                     </div>
 
-                    <button className="btn-primary w-full">Apply Now</button>
+                    <button onClick={() => handleApplyNow(id)} className="btn-primary w-full">Apply Now</button>
                 </div>
             </section>
         </>

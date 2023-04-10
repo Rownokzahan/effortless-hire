@@ -22,7 +22,7 @@ const Job = ({job}) => {
                 <p className='flex items-center'><HiOutlineCurrencyDollar className='text-xl mr-1' /> Salary : {salary}</p>
             </div>
 
-            <Link to={`/job-details/${id}`}><button className='btn-primary mt-4'>View Details</button></Link>
+            <Link to={`/job/${id}`}><button className='btn-primary mt-4'>View Details</button></Link>
             
         </div>
     );
