@@ -65,7 +65,8 @@ const Home = () => {
                 </div>
 
                 <div className='text-center mt-8'>
-                    <button className='btn-primary'>See All Jobs</button>
+                    {!displayAllJob && <button onClick={() => setDisplayAllJob(true)} className='btn-primary'>See All Jobs</button>}
+                    
                 </div>
             </section>
 
