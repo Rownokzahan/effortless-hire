@@ -1,5 +1,6 @@
 import React from 'react';
 import { HiOutlineLocationMarker, HiOutlineCurrencyDollar } from "react-icons/hi";
+import { Link } from 'react-router-dom';
 
 const Job = ({job}) => {
 
@@ -20,7 +21,9 @@ const Job = ({job}) => {
                 <p className='flex items-center'><HiOutlineLocationMarker className='text-xl mr-1' />{location}</p>
                 <p className='flex items-center'><HiOutlineCurrencyDollar className='text-xl mr-1' /> Salary : {salary}</p>
             </div>
-            <button onClick={()=> console.log(id)} className='btn-primary mt-4'>View Details</button>
+
+            <Link to={`/job-details/${id}`}><button className='btn-primary mt-4'>View Details</button></Link>
+            
         </div>
     );
 };

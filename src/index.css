@@ -22,5 +22,5 @@
 }
 
 .menu {
-    @apply text-ui-light-gray absolute top-32 bg-white w-9/12 flex-col gap-4 mt-4 p-4 md:static md:bg-transparent md:w-auto md:flex md:flex-row md:items-center md:gap-8 md:mt-0 md:p-0
+    @apply text-ui-light-gray absolute top-32 bg-white w-9/12 flex-col gap-4 mt-4 p-4 md:static md:bg-transparent md:w-auto md:flex md:flex-row md:items-center md:gap-8 md:mt-0 md:p-0 z-10
 }

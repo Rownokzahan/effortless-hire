@@ -13,7 +13,7 @@ const Header = () => {
                 EffortlessHire
             </Link>
 
-            {!openNavLink && <RxHamburgerMenu onClick={() => setOpenNavLink(true)} className='w-6 h-6 absolute right-8 top-8 md:hidden' />}
+            {!openNavLink && <RxHamburgerMenu onClick={() => setOpenNavLink(true)} className='w-6 z-10 h-6 absolute right-8 top-8 md:hidden' />}
 
             <div className={`menu ${openNavLink ? 'flex' : 'hidden'}`}>
                 <RxCross1 onClick={() => setOpenNavLink(false)} className="w-6 h-6 absolute right-2 top-2 md:hidden" />
